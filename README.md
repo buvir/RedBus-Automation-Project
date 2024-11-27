@@ -11,6 +11,7 @@ Important Note:
 This script serves as a demonstration and cannot complete a full booking process due to Redbus's dynamic nature and potential CAPTCHAs.
 Redbus's website structure can change, potentially affecting the script's functionality.
 Requirements
+<img src="https://cdn.dribbble.com/users/12345/screenshots/19562403/media/14688984-british-bus.png" alt="British Bus" style="width: 70%; border: 1px solid #ccc; border-radius: 5px;">
 ![Alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F19562403-British-bus&psig=AOvVaw0kYC5I4sALffm3sSXMnODn&ust=1732769648790000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwik1rWM3PuJAxVkcWwGHVnyCLcQjRx6BAgAEBg.gif)
 
 Python 3.x
