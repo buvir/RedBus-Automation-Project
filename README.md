@@ -11,7 +11,7 @@ Important Note:
 This script serves as a demonstration and cannot complete a full booking process due to Redbus's dynamic nature and potential CAPTCHAs.
 Redbus's website structure can change, potentially affecting the script's functionality.
 Requirements
-![Alt text](https://images.app.goo.gl/fHNkWTqDLkavXEuG9.gif)
+![Alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F19562403-British-bus&psig=AOvVaw0kYC5I4sALffm3sSXMnODn&ust=1732769648790000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwik1rWM3PuJAxVkcWwGHVnyCLcQjRx6BAgAEBg.gif)
 
 Python 3.x
 Selenium (installation: pip install selenium)
