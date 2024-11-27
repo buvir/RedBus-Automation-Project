@@ -11,6 +11,27 @@ Important Note:
 This script serves as a demonstration and cannot complete a full booking process due to Redbus's dynamic nature and potential CAPTCHAs.
 Redbus's website structure can change, potentially affecting the script's functionality.
 Requirements
+
+<h1>RedBus Automation Project</h1>
+
+<p>This project automates navigation on the <a href="https://www.redbus.in/" target="_blank">RedBus website</a> using Python and Selenium. It showcases the automation of selecting a bus route dynamically.</p>
+
+<h2>Features</h2>
+<ul>
+    <li>Automates navigation on the RedBus website.</li>
+    <li>Demonstrates the use of Selenium for web automation.</li>
+    <li>Handles dynamic web elements using explicit waits.</li>
+</ul>
+
+<h2>Demo</h2>
+<p>Below is a conceptual representation of a British bus as a placeholder illustration:</p>
+<a href="https://dribbble.com/shots/19562403-British-bus/attachments/14688984?mode=media" target="_blank">
+    <img src="https://cdn.dribbble.com/users/12345/screenshots/19562403/media/14688984-british-bus.png" alt="British Bus" style="width: 70%; border: 1px solid #ccc; border-radius: 5px;">
+</a>
+
+<h2>Repository</h2>
+<p>Access the complete project on GitHub: <a href="https://github.com/yourusername/redbus-automation" target="_blank">RedBus Automation Repository</a></p>
+
 <img src="https://cdn.dribbble.com/users/12345/screenshots/19562403/media/14688984-british-bus.png" alt="British Bus" style="width: 70%; border: 1px solid #ccc; border-radius: 5px;">
 
 Python 3.x
