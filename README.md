@@ -11,7 +11,7 @@ Important Note:
 This script serves as a demonstration and cannot complete a full booking process due to Redbus's dynamic nature and potential CAPTCHAs.
 Redbus's website structure can change, potentially affecting the script's functionality.
 Requirements
-
+![Alt text](https://images.app.goo.gl/fHNkWTqDLkavXEuG9.gif)
 
 Python 3.x
 Selenium (installation: pip install selenium)
