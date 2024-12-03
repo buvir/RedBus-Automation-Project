@@ -18,6 +18,11 @@ Requirements
 
 <h1>RedBus Automation Project</h1>
 
+<div align="center"> 
+    <img src="https://bus.manninghamscouts.org.au/img/Rocking_Red_bus.gif" alt="Rocking Red Bus" width="45%"/> 
+</div>
+
+
 <p>This project automates navigation on the <a href="https://www.redbus.in/" target="_blank">RedBus website</a> using Python and Selenium. It showcases the automation of selecting a bus route dynamically.</p>
 
 <h2>Features</h2>
