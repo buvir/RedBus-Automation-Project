@@ -2,7 +2,7 @@
 
 Redbus Bus Booking Automation Script
 <div align="center"> 
-    <img src="https://cdn.dribbble.com/users/2272786/screenshots/10965290/media/4e95c9f5d1d404ef98730ad989b6a5ac.gif" alt="Example Function 1" width="45%"/> 
+    #<img src="https://cdn.dribbble.com/users/2272786/screenshots/10965290/media/4e95c9f5d1d404ef98730ad989b6a5ac.gif" alt="Example Function 1" width="45%"/> 
     <img src="https://cdn.dribbble.com/users/2272786/screenshots/10965290/media/4e95c9f5d1d404ef98730ad989b6a5ac.gif" alt="Example Function 2" width="45%"/> 
 </div>
 
