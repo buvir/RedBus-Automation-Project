@@ -1,0 +1,62 @@
+#  insert the data   Scrape the Redbus APSRTC PRIVATE BUS from website,  route : Vijayawada to Hyderabad
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+from datetime import datetime
+
+try:
+    # Connect to PostgreSQL database
+    connection = psycopg2.connect(
+        host="localhost",
+        port="5432",
+        database="red_bus",
+        user="postgres",
+        password="sample12"
+    )
+    connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+    cursor = connection.cursor()
+
+    # Create the bus_routes table if it doesn't exist
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS bus_routes (
+        id SERIAL PRIMARY KEY,
+        route_name TEXT,
+        route_link TEXT,
+        bus_name TEXT DEFAULT NULL,
+        bus_type TEXT DEFAULT NULL,
+        departing_time TIME DEFAULT NULL,
+        duration TEXT DEFAULT NULL,
+        reaching_time TIME DEFAULT NULL,
+        star_rating FLOAT DEFAULT NULL,
+        price DECIMAL DEFAULT NULL,
+        seats_available INT DEFAULT NULL
+    )
+    """)
+
+    # Insert data into the table
+    for row in Apsrtc_pvt_bus_data:
+        cursor.execute("""
+        INSERT INTO bus_routes (route_name, route_link, bus_name, bus_type, departing_time, duration, 
+        reaching_time, star_rating, price, seats_available) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (
+            row['route_name'], row['route_link'], row['bus_name'], row['bus_type'],
+            datetime.strptime(row['departing_time'], "%H:%M").time() if row['departing_time'] else None,
+            row['duration'],
+            datetime.strptime(row['reaching_time'], "%H:%M").time() if row['reaching_time'] else None,
+            float(row['star_rating']) if row['star_rating'] else None,
+            float(row['price']) if row['price'] else None,
+            int(row['seats_available']) if row['seats_available'] else None
+        ))
+
+    # Commit the transaction
+    connection.commit()
+    print("Data inserted successfully.")
+
+except Exception as e:
+    print(f"An error occurred while interacting with the database: {e}")
+
+finally:
+    if cursor:
+        cursor.close()
+    if connection:
+        connection.close()
